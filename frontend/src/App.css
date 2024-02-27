@@ -1,0 +1,33 @@
+.main-task li{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width:50rem;
+  min-height: 6rem;
+  border-bottom: .1rem solid #ccc;
+}
+
+.main-task li:first-child{
+  border-top: .1rem solid #ccc;
+}
+
+.main-task li:hover{
+  background-color: #fef2f2;
+}
+
+.main-task li input[type="checkbox"]:checked  + label {
+  text-decoration: line-through;
+  color: #D14D72;
+}
+
+.main-task li button{
+  padding: .6rem 1rem;
+  width: 7rem;
+  background-color: #D14D72;
+  color: #FFF9F9;
+  border:none;
+  display: inline-block;
+  cursor: pointer;
+  justify-self: center;
+  letter-spacing: .1rem;
+}
